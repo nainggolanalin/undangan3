@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Title & Description (SEO-friendly) -->
-<title>Undangan Pernikahan Digital Elegan: Putra & Siska | Online & Responsive</title>
-<meta name="description" content="Selamat datang di undangan pernikahan online resmi Putra & Siska. Rayakan hari bahagia kami dengan akses mudah, galeri momen indah, dan RSVP online cepat. Buka undangan digital kami sekarang!">
-<meta name="keywords" content="undangan pernikahan digital, undangan online putra siska, digital wedding invitation, e-invitation, undangan website, template undangan pernikahan, vercel github wedding">
-<meta name="author" content="Putra & Siska">
+  <!-- SEO Title -->
+  <title>Undangan Pernikahan Putra & Siska</title>
 
-<!-- Open Graph / Facebook (Sangat Penting untuk Media Sosial) -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nainggolanalin.github.io/undangan3/"> <!-- Ganti dengan link Vercel Anda -->
-<meta property="og:title" content="The Wedding of Putra & Siska - Undangan Pernikahan Digital">
-<meta property="og:description" content="Kamu diundang! Buka dan lihat detail acara, waktu, serta lokasi pernikahan kami secara online di sini.">
-<meta property="og:image" content="https://lh3.googleusercontent.com/d/1tuGLXllH6eqNtkWojc5ziHASStG7u3tb"> <!-- Ganti dengan lokasi gambar thumbnail di atas -->
-<style>
-body {
-margin: 0;
-padding: 0;
-overflow: hidden; /* Mencegah double scrollbar */
-background-color: #0d1117; /* Warna gelap sementara loading */
-}
-iframe {
-border: none;
-width: 100vw;
-height: 100vh;
-display: block;
-}
-</style>
+  <!-- SEO Description -->
+  <meta name="description" content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan Putra & Siska. Cek detail lokasi dan jadwal di sini.">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview Tags -->
+  <meta property="og:title" content="Undangan Pernikahan Putra & Siska">
+  <meta property="og:description" content="Kami mengundang Anda untuk menjadi bagian dari hari bahagia pernikahan kami. Buka undangan digital untuk informasi lengkap dan konfirmasi kehadiran.">
+  <meta property="og:image" content="https://lh3.googleusercontent.com/d/1bNOpEzxQupJQzCaW2b1wreNgqOYAvKpw=s1600">
+  <meta property="og:url" content="https://script.google.com/macros/s/AKfycbxyMV8ymKFBPA2TMsLXxUdR6Of3VjZrc1iVDFOEtDcKxS_Uy62B9dyhlyNIm9Eel6DH/exec">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Undangan Pernikahan Putra & Siska">
+  <meta name="twitter:description" content="Kami mengundang Anda untuk menjadi bagian dari hari bahagia pernikahan kami. Buka undangan digital untuk informasi lengkap dan konfirmasi kehadiran.">
+  <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1bNOpEzxQupJQzCaW2b1wreNgqOYAvKpw=s1600">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f0f7ff;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100dvh;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-<!-- Aplikasi Web Undangan Pernikahan -->
-<iframe src="https://script.google.com/macros/s/AKfycbxyMV8ymKFBPA2TMsLXxUdR6Of3VjZrc1iVDFOEtDcKxS_Uy62B9dyhlyNIm9Eel6DH/exec" title="Undangan Pernikahan Digital"></iframe>
+  <iframe 
+    id="app-frame"
+    src="https://script.google.com/macros/s/AKfycbxyMV8ymKFBPA2TMsLXxUdR6Of3VjZrc1iVDFOEtDcKxS_Uy62B9dyhlyNIm9Eel6DH/exec" 
+    title="The Wedding of Putra & Siska"
+    allow="autoplay; fullscreen">
+  </iframe>
+
+  <script>
+    // Meneruskan parameter URL (misal: ?to=Nama+Tamu) dari domain Vercel ke Google Apps Script
+    const urlParams = window.location.search;
+    if (urlParams) {
+      const iframe = document.getElementById('app-frame');
+      iframe.src = iframe.src + urlParams;
+    }
+  </script>
 </body>
 </html>
